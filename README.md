@@ -2,7 +2,7 @@
 
 An interactive web map that displays restaurant locations using data retrieved from a PostgreSQL database through the Supabase REST API.
 
-This project is part of GIS development and web-based mapping.
+This project is part of my exploration of GIS development and web-based mapping.
 
 ## Features
 
@@ -32,7 +32,7 @@ Restaurant information is stored in a PostgreSQL database hosted by Supabase.
 
 The browser requests restaurant data from the Supabase REST API:
 
- 
+```text
 PostgreSQL
     ↓
 Supabase REST API
@@ -42,11 +42,11 @@ JavaScript Fetch API
 Leaflet
     ↓
 Interactive Map
- 
+```
 
 Each restaurant record contains information such as:
 
- 
+```text
 name
 latitude
 longitude
@@ -54,7 +54,7 @@ cuisine
 rating
 price_level
 outdoor_seating
- 
+```
 
 JavaScript retrieves the records and uses the latitude and longitude values to dynamically create Leaflet markers.
 
@@ -68,7 +68,7 @@ The frontend uses a Supabase publishable key. No secret or service-role keys sho
 
 ## Future Improvements
 
-As I continue geospatial development, I plan to expand this project with features such as:
+As I continue learning geospatial development, I plan to expand this project with features such as:
 
 - Restaurant filtering
 - Custom map markers
